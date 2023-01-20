@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainContent {
+  width: 100%;
+  height: 99vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.inputSide {
+  width: 60vh;
+  justify-content: space-around;
+  display: flex;
+  padding: 2px;
+  height: 50vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-shadow: 5px 5px 25px lightgray;
+  border-radius: 6px;
+}
+.inputSide input {
+  padding: 15px;
+  width: 90%;
+  margin: 5px;
+  text-align: start;
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid lightgray;
+  outline: none;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px lightgray;
+}
+.inputSide button {
+  padding: 15px 25px;
+  background-color: #7e51f2;
+  box-shadow: 1px 1px 5px #7e51f2;
   color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  transform: translateY(-50%);
 }
-
-.App-link {
-  color: #61dafb;
+.inputSide h2 {
+  font-size: 1.5rem;
+  padding: 5px;
+  text-align: start;
+  margin: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 700px) {
+  .inputSide {
+    width: 50vh;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 590px) {
+  .inputSide {
+    width: 40vh;
+    height: 40vh;
+  }
+  .inputSide h2 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 480px) {
+  .inputSide {
+    width: 35vh;
+    height: 35vh;
+  }
+  .inputSide h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .inputSide {
+    width: 95vw;
+    height: 35vh;
+  }
+  .inputSide h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 350px) {
+  .inputSide input {
+    width: 80%;
+  }
+  .inputSide h2 {
+    font-size: 1.1rem;
   }
 }
